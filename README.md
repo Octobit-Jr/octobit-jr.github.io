@@ -1,15 +1,15 @@
 
-#Landing Page da OctobitJr
+# Landing Page da OctobitJr
 
 Bem-vindo ao repositório da landing page de apresentação da OctobitJr! Neste repositório, você encontrará o código-fonte e os recursos necessários para a nossa página inicial, que serve como a vitrine digital da nossa empresa júnior.
 
-##Warnings
+## Warnings
 
 - Lembre sempre de clonar utilizando chave ssh
 - Não dê push direto na main, sempre abra PRs para adicionar novas features na branch principal
 - Nome das branches devem seguir o padrão "LP-{number}", onde number refere-se ao número da task que está sendo desenvolvida. As tasks podem ser vista no board na aba de projetos.
 
-##Padrão de commits
+## Padrão de commits
 
 - "(tipo)[Nome da branch] Mensagem de commit"
 - Segue os tipos abaixo:
