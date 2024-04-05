@@ -1,4 +1,4 @@
 "use strict";
 
 import './navbar.js';
-import 'hamburgerButton.js';
+import './hamburgerButton.js';
