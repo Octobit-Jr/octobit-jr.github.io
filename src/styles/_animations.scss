@@ -1,0 +1,23 @@
+.animate-in{
+    visibility: visible;
+    opacity: 100%;
+    transform: translateY(0);
+}
+
+.animate-out{
+    visibility: hidden;
+    opacity: 0%;
+    transform: translateY(-3rem);
+}
+
+.opened-hamburger{
+    .line-1{
+        transform: rotate(45deg) translate(0.3rem, 0.3rem);
+    }
+    .line-2{
+        opacity: 0;
+    }
+    .line-3{
+        transform: rotate(-45deg) translate(0.5rem, -0.5rem);
+    }
+}

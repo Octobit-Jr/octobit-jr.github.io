@@ -1,0 +1,179 @@
+.header {
+    width: 100%;
+
+    &___nav{
+        width: 100%;
+        height: 5rem;
+
+        padding-left: 5rem;
+        padding-right: 5rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+
+        background-color: rgba($color: $black, $alpha: 0.0);
+        transition: all 0.3s ease-in-out;
+
+        > ul {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            li {
+                margin: 0 1rem;
+                padding: 0;
+                font-size: 0.8rem;
+                font-weight: 500;
+                
+                a {
+                    color: $white;
+                    transition: all 0.3s ease-in-out;
+                    letter-spacing: 2px;
+
+                    &:hover {
+                        color: $green;
+                    }
+
+                    img {
+                        width: 1.5rem;
+                        height: 1.5rem;
+                    }
+                }
+            }
+        }
+
+        &___mobile-menu {
+            left: 1rem;
+            top: 5.5rem;
+            right: 1rem;
+            position: absolute;
+            border-radius: 1rem;
+            background-color: $white;
+            transition: opacity 0.2s ease-in-out;
+            transition: transform 0.2s ease-in-out;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            > ul {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                
+                li {
+                    a {
+                        color: $black;
+                        margin-bottom: 0.3rem;
+                    }
+                }
+                img {
+                    width: 1.5rem;
+                    height: 1.5rem;
+                    filter: invert(70%);
+                }
+            }
+        }
+
+        &___mobile {
+
+            // display: flex;
+            // position: relative;
+            // align-items: center;
+            // justify-content: center;
+            // width: 2rem;
+            height: 100%;
+            
+            &___hamburger {
+                width: 2rem;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                
+                &___line{
+                    transition: all 0.3s ease-in-out;
+                    border-radius: 99999px;
+                    width: 100%;
+                    height: 0.25rem;
+                    background-color: $white;
+                }
+                
+                &___line:not(:last-child){
+                    margin-bottom: 0.3rem;
+                }
+            }
+        }
+
+        &___img {
+            width: 4rem;
+            height: 4rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    &___hero {
+        background-image: linear-gradient(to right top, #1e0342, #260651, #2e0861, #370b71, #400f81, #47118f, #4f149e, #5616ad, #5e17bd, #6619ce, #6e1ade, #761bef);
+        width: 100%;
+        height: 85vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        padding-left: 5rem;
+        padding-right: 5rem;
+
+        &___section{
+            width: 33%;
+
+            &___title{
+                font-size: 4rem;
+                font-weight: 700;
+                color: #ffffff;
+                margin-bottom: 1rem;
+                line-height: 2rem;
+            }
+
+            &___subtitle{
+                width: 100%;
+                font-size: 1rem;
+                font-weight: 400;
+                color: #ffffff;
+                margin-bottom: 1rem;
+                line-height: 1.5rem;
+            }
+        }
+
+        &___img{
+            height: 35rem;
+            margin: 1rem;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.navbar___bg{
+    background-color: rgba($color: $black, $alpha: 1.0);
+}
