@@ -9,7 +9,6 @@ html {
 
 body {
   margin: 0;
-  padding: 0 0 50px 0;
   font-size: 100%;
   max-width: 100vw;
   overflow-x: hidden;
@@ -37,15 +36,22 @@ button:hover {
   cursor: pointer;
 }
 
+.text {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #1E1E1E;
+}
+
 .title {
-  font-size: 2.5rem;
-  font-weight: 600;
+  font-size: 1.875rem;
+  font-weight: 800;
   color: #761BEF;
 }
 
 .container {
   width: 80rem;
-  margin-top: 5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 @media (max-width: 767px) {
@@ -175,6 +181,7 @@ button:hover {
   align-items: center;
   padding-left: 5rem;
   padding-right: 5rem;
+  margin-bottom: 1.5rem;
 }
 .header___hero___section {
   width: 33%;
@@ -258,6 +265,80 @@ button:hover {
 }
 .opened-hamburger .line-3 {
   transform: rotate(-45deg) translate(0.5rem, -0.5rem);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #1E1E1E;
+  padding: 1.5rem 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../public/octopus_background_parallax.jpg") center center;
+  background-attachment: fixed;
+}
+.footer___title {
+  color: #DBDAD9;
+}
+.footer___paragraph {
+  color: #DBDAD9;
+  width: 50%;
+  text-align: center;
+}
+.footer___container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.footer___container :not(:last-child) {
+  margin-right: 0.5rem;
+}
+.footer___container___icon a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #761BEF;
+  width: 3rem;
+  height: 3rem;
+}
+.footer___container___icon___instagram span {
+  width: 3rem;
+  height: 3rem;
+  background: no-repeat url("../public/instagram.svg") center center;
+  background-size: 1.5rem;
+  filter: invert(100%);
+}
+.footer___container___icon___linkedin span {
+  width: 3rem;
+  height: 3rem;
+  background: no-repeat url("../public/linkedin.svg") center center;
+  background-size: 1.5rem;
+  filter: invert(100%);
+}
+.footer___container___icon___email span {
+  width: 3rem;
+  height: 3rem;
+  background: no-repeat url("../public/email.svg") center center;
+  background-size: 1.5rem;
+  filter: invert(100%);
+}
+.footer___container___icon___whatsapp span {
+  width: 3rem;
+  height: 3rem;
+  background: no-repeat url("../public/whatsapp.svg") center center;
+  background-size: 1.5rem;
+  filter: invert(100%);
+}
+
+.copyright {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

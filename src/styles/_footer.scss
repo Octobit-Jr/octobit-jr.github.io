@@ -1,0 +1,79 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: $black;
+    padding: 1.5rem 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('../public/octopus_background_parallax.jpg') center center;
+    background-attachment: fixed;
+
+    &___title {
+        color: $white;
+    }
+
+    &___paragraph {
+        color: $white;
+        width: 50%;
+        text-align: center;
+    }
+
+    &___container {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        :not(:last-child){
+            margin-right: 0.5rem;
+        }
+
+        &___icon{
+
+            a {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                background: $purple;
+                width: 3rem;
+                height:  3rem;
+            }
+
+            &___instagram span {
+                width: 3rem;
+                height: 3rem;
+                background: no-repeat url('../public/instagram.svg') center center;
+                background-size: 1.5rem;
+                filter: invert(100%);
+            }
+
+            &___linkedin span {
+                width: 3rem;
+                height: 3rem;
+                background: no-repeat url('../public/linkedin.svg') center center;
+                background-size: 1.5rem;
+                filter: invert(100%);
+            }
+
+            &___email span {
+                width: 3rem;
+                height: 3rem;
+                background: no-repeat url('../public/email.svg') center center;
+                background-size: 1.5rem;
+                filter: invert(100%);
+            }
+
+            &___whatsapp span {
+                width: 3rem;
+                height: 3rem;
+                background: no-repeat url('../public/whatsapp.svg') center center;
+                background-size: 1.5rem;
+                filter: invert(100%);
+            }
+        }
+    }
+    
+}
