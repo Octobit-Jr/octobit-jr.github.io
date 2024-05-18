@@ -28,6 +28,11 @@ body{
         list-style: none;
     }
 
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+
     ::selection {
     }
 }
@@ -60,18 +65,21 @@ button{
 
 .container{
     width: 80rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin: 1.5rem 0;
+    padding: 0 1.5rem;
+    @include max-width-to-display-content(410px){
+        padding: 0 0.5rem;
+    }
 }
 
 .hide-for-mobile{
-    @include mobile($max-width){
+    @include max-width-to-display-content($tablet-width){
         display: none!important;
     }
 }
 
 .hide-for-desktop{
-    @include desktop($min-width){
+    @include min-width-to-display-content($desktop-width){
         display: none!important;
     }
 }

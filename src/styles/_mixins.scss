@@ -1,10 +1,10 @@
-@mixin desktop($size){
+@mixin min-width-to-display-content($size){
     @media (min-width: $size){
         @content;
     }
 }
 
-@mixin mobile($size){
+@mixin max-width-to-display-content($size){
     @media (max-width: $size){
         @content;
     }
