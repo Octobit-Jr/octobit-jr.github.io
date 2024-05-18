@@ -17,6 +17,12 @@
         color: $white;
         width: 50%;
         text-align: center;
+
+        @include max-width-to-display-content($tablet-width){
+            width: 90%;
+        }
+
+        margin-bottom: 1rem;
     }
 
     &___container {

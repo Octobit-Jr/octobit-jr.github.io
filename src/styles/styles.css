@@ -59,7 +59,8 @@ button:hover {
 }
 @media (max-width: 410px) {
   .container {
-    padding: 0 0.5rem;
+    padding: 0;
+    width: 90%;
   }
 }
 
@@ -108,13 +109,10 @@ button:hover {
 .header___nav > ul li {
   margin: 0 1rem;
   padding: 0;
-  font-size: 0.8rem;
-  font-weight: 500;
 }
 .header___nav > ul li a {
   color: #DBDAD9;
   transition: all 0.3s ease-in-out;
-  letter-spacing: 2px;
 }
 .header___nav > ul li a:hover {
   color: #8BF67E;
@@ -342,6 +340,12 @@ button:hover {
   color: #DBDAD9;
   width: 50%;
   text-align: center;
+  margin-bottom: 1rem;
+}
+@media (max-width: 996px) {
+  .footer___paragraph {
+    width: 90%;
+  }
 }
 .footer___container {
   display: flex;
