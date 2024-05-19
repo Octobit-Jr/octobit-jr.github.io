@@ -42,18 +42,20 @@ button:hover {
 
 .text {
   font-size: 1rem;
+  line-height: 1.5rem;
   font-weight: 400;
   color: #1E1E1E;
 }
 
 .title {
   font-size: 1.875rem;
+  line-height: 2.8125rem;
   font-weight: 900;
   color: #761BEF;
 }
 
 .container {
-  width: 80rem;
+  width: 70rem;
   margin: 1.5rem 0;
   padding: 0 1.5rem;
 }
@@ -96,6 +98,14 @@ button:hover {
   top: 0;
   background-color: rgba(30, 30, 30, 0);
   transition: all 0.3s ease-in-out;
+}
+@media (max-width: 410px) {
+  .header___nav {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
 }
 .header___nav > ul {
   display: flex;
@@ -217,13 +227,14 @@ button:hover {
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 1rem;
-  line-height: 2rem;
+  line-height: 3rem;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 @media (max-width: 996px) {
   .header___hero___section___title {
     font-size: 2rem;
+    line-height: 2rem;
   }
 }
 .header___hero___section___subtitle {
@@ -400,6 +411,10 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.copyright > p {
+  color: #1E1E1E;
+  filter: opacity(0.4);
 }
 
 /*# sourceMappingURL=styles.css.map */
