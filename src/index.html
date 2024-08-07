@@ -108,51 +108,50 @@
   <!--About-->
   <section id="sobre" class="about">
     <main class="about___main container">
-      <h2 class="about___main___title title">Sobre</h2>
-      <article class="text about___main___article">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Nihil dignissimos ratione, nam incidunt error sed consequatur iusto 
-          exercitationem quaerat, facilis voluptatibus architecto mollitia alias sit. Corporis 
-          temporibus reprehenderit consequuntur exercitationem.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Nihil dignissimos ratione, nam incidunt error sed consequatur iusto 
-          exercitationem quaerat, facilis voluptatibus architecto mollitia alias sit. Corporis 
-          temporibus reprehenderit consequuntur exercitationem. </br> </br>
-        </p>
-
-        <p>
-          Lorem ipsum dolor undefined sit amet consectetur adipisicing elit. 
-          Nihil dignissimos ratione, nam incidunt error sed consequatur iusto 
-          exercitationem quaerat, facilis voluptatibus architecto mollitia alias sit. Corporis 
-          temporibus reprehenderit consequuntur exercitationem.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Nihil dignissimos ratione, nam incidunt error sed consequatur iusto 
-          exercitationem quaerat, facilis. </br> </br>
-        </p>
-
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Nihil dignissimos ratione, nam incidunt error sed consequatur iusto 
-          exercitationem quaerat, facilis voluptatibus architecto mollitia alias sit. Corporis 
-          temporibus reprehenderit consequuntur exercitationem. </br> </br>
-        </p>
-      </article>
-
+      <!-- <h2 class="about___main___title title">Sobre</h2> -->
       <div class="about___main___container">
-        <article class="about___main___container___article" >
-          <h3 class="about___main___container___article___title">Missão</h3>
-          <p class="about___main___container___article___text text">
+        <article class="text about___main___container___article">
+          <h3 class="title">
+            Um Breve Resumo...
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Nihil dignissimos ratione, nam incidunt error sed consequatur iusto 
+            exercitationem quaerat, facilis voluptatibus architecto mollitia alias sit. Corporis 
+            temporibus reprehenderit consequuntur exercitationem.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Nihil dignissimos ratione, nam incidunt error sed consequatur iusto 
+            exercitationem quaerat, facilis voluptatibus architecto mollitia alias sit. Corporis 
+            temporibus reprehenderit consequuntur exercitationem. </br> </br>
+          </p>
+  
+          <p>
+            Lorem ipsum dolor undefined sit amet consectetur adipisicing elit. 
+            Nihil dignissimos ratione, nam incidunt error sed consequatur iusto 
+            exercitationem quaerat, facilis voluptatibus architecto mollitia alias sit. Corporis 
+            temporibus reprehenderit consequuntur exercitationem.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Nihil dignissimos ratione, nam incidunt error sed consequatur iusto 
+            exercitationem quaerat, facilis. </br> </br>
+          </p>
+        </article>
+        <img src="./public/Isometric Hero Art.png" alt="Logo Octobit Jr">
+      </div>
+
+      <div class="about___main___box">
+        <article class="about___main___box___article" >
+          <h3 class="about___main___box___article___title">Missão</h3>
+          <p class="about___main___box___article___text text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Nihil dignissimos ratione.
           </p>
           <img src="./public/aim_icon_pixel.png" alt="olho de pixel arte com íris rocha">
         </article>
         
-        <article class="about___main___container___article">
+        <article class="about___main___box___article">
           
-          <h3 class="about___main___container___article___title">Visão</h3>
-          <p class="about___main___container___article___text text">
+          <h3 class="about___main___box___article___title">Visão</h3>
+          <p class="about___main___box___article___text text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Nihil dignissimos ratione.
           </p>
@@ -160,9 +159,9 @@
           <img src="./public/olho_pixels_art_landing_page_octobit_jr.png" alt="olho de pixel arte com íris rocha">
         </article>
         
-        <article class="about___main___container___article">
-          <h3 class="about___main___container___article___title">Valores</h3>
-          <p class="about___main___container___article___text text">
+        <article class="about___main___box___article">
+          <h3 class="about___main___box___article___title">Valores</h3>
+          <p class="about___main___box___article___text text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Nihil dignissimos ratione.
           </p>
@@ -174,37 +173,68 @@
   </section>
 
   <!-- Footer -->
-  <footer class="footer container">
-    <h2 id="contatos" class="footer___title title">Contatos</h2>
-    <p class="footer___paragraph">
-      Impulsione seu negócio com soluções de software personalizadas.
-      Entre em contato hoje mesmo para descobrir como podemos ajudá-lo a alcançar o sucesso digital!
-    </p>
-    <ul class="footer___container">
-      <li class="footer___container___icon">
-          <a class="footer___container___icon___instagram" href="https://www.instagram.com/octobitjr?igsh=MWp5M2t0bnJlajRyeQ==" target=”_blank”>
+  <footer class="">
+    <div class="forms">
+      <div class="forms___text">
+        <h2 class="forms___text___title title">Uma palavrinha?</h2>
+        <p class="forms___text___paragraph">
+          Impulsione seu negócio com soluções de software personalizadas.
+          Entre em contato hoje mesmo para descobrir como podemos ajudá-lo a alcançar o sucesso digital!
+        </p>
+      </div>
+
+      <form class="forms___form">
+        <input id="forms-name" class="forms___form___input" type="text" placeholder="Nome">
+
+        <input id="forms-email" class="forms___form___input" type="email" placeholder="Email">
+
+        <input
+          id="forms-cellphone"
+          class="forms___form___input"
+          type="tel"
+          maxlength="15"
+          placeholder="Telefone"
+        >
+
+        <input id="forms-company" class="forms___form___input" type="text" placeholder="Empresa">
+
+        <textarea id="forms-message" class="forms___form___input" placeholder="Mensagem"></textarea>
+        <button id="forms-submit" type="submit">Enviar</button>
+      </form>
+    </div>
+
+    <div class="footer">
+      <h2 id="contatos" class="footer___title title">Nossas Redes</h2>
+      <p class="footer___paragraph">
+        Impulsione seu negócio com soluções de software personalizadas.
+        Entre em contato hoje mesmo para descobrir como podemos ajudá-lo a alcançar o sucesso digital!
+      </p>
+      <ul class="footer___container">
+        <li class="footer___container___icon">
+            <a class="footer___container___icon___instagram" href="https://www.instagram.com/octobitjr?igsh=MWp5M2t0bnJlajRyeQ==" target=”_blank”>
+              <span></span>
+            </a>
+        </li>
+        
+        <li class="footer___container___icon">
+          <a class="footer___container___icon___linkedin" href="https://www.linkedin.com/company/octobit-empresa-j%C3%BAnior-usp/" target=”_blank”>
             <span></span>
           </a>
-      </li>
-      
-      <li class="footer___container___icon">
-        <a class="footer___container___icon___linkedin" href="https://www.linkedin.com/company/octobit-empresa-j%C3%BAnior-usp/" target=”_blank”>
-          <span></span>
-        </a>
-      </li>
+        </li>
 
-      <li class="footer___container___icon">
-        <a class="footer___container___icon___email" href="" target=”_blank”>
-          <span></span>
-        </a>
-      </li>
+        <li class="footer___container___icon">
+          <a class="footer___container___icon___email" href="" target=”_blank”>
+            <span></span>
+          </a>
+        </li>
 
-      <li class="footer___container___icon">
-        <a class="footer___container___icon___whatsapp" href="" target=”_blank”>
-          <span></span>
-        </a>
-      </li>
-    </ul>
+        <li class="footer___container___icon">
+          <a class="footer___container___icon___whatsapp" href="" target=”_blank”>
+            <span></span>
+          </a>
+        </li>
+      </ul>
+    </div>
   </footer>
 
   <div class="copyright container text">

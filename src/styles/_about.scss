@@ -9,7 +9,22 @@
         align-items: center;
         justify-content: center;
 
-        &___container{
+        &___container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            &___article {
+                width: 50%;
+            }
+
+            img {
+                width: 50%;
+            }
+        }
+
+        &___box{
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;

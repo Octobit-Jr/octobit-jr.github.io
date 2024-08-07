@@ -1,0 +1,62 @@
+.forms {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: top;
+  width: 100%;
+  background-color: $purple-2;
+
+  &___text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 50%;
+
+    &___title {
+      color: $white;
+      font-size: 1.875rem;
+      line-height: 2.8125rem;
+      font-weight: 900;
+    }
+
+    &___paragraph {
+      color: $white;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      font-weight: 400;
+    }
+  }
+
+  &___form {
+    &___input {
+      width: 100%;
+      padding: 1rem;
+      margin-top: 0.25rem;
+      border-radius: 5px;
+      border: none;
+      background: $purple-3;
+      color: $white;
+      font-size: 0.8rem;
+    }
+
+    button {
+      width: fit-content;
+      padding: 1rem;
+      margin-top: 0.25rem;
+      border-radius: 5px;
+      border: none;
+      background: $green;
+      color: $black;
+      font-size: 0.8rem;
+      font-weight: normal;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        cursor: pointer;
+        background: $green;
+      }
+    }
+  }
+}
