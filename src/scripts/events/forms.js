@@ -49,10 +49,7 @@ formsSubmit.addEventListener("click", () => {
     },
     body: JSON.stringify(formsPayload),
   })
-    .then((response) => response.json())
-    .then((data) => {
-      console.log("Success:", data);
-    })
+    .then((response) => console.log(response))
     .catch((error) => {
       console.error("Error:", error);
     });
