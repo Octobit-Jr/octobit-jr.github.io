@@ -23,6 +23,13 @@
         background-color: rgba($color: $black, $alpha: 0.0);
         transition: all 0.3s ease-in-out;
 
+        @include max-width-to-display-content($mobile-width){
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+
         > ul {
             display: flex;
             flex-direction: row;
@@ -168,12 +175,13 @@
                 font-weight: 700;
                 color: #ffffff;
                 margin-bottom: 1rem;
-                line-height: 2rem;
+                line-height: 3rem;
                 text-overflow: ellipsis;
                 white-space: nowrap;
 
                 @include max-width-to-display-content($tablet-width){
                     font-size: 2rem;
+                    line-height: 2rem;
                 }
             }
 

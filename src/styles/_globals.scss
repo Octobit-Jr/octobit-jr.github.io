@@ -53,18 +53,20 @@ button{
 
 .text{
     font-size: 1rem;
+    line-height: 1.5rem;
     font-weight: 400;
     color: $black;
 }
 
 .title {
     font-size: 1.875rem;
+    line-height: 2.8125rem;
     font-weight: 900;
     color: $purple;
 }
 
 .container{
-    width: 80rem;
+    width: 70rem;
     margin: 1.5rem 0;
     padding: 0 1.5rem;
     @include max-width-to-display-content($mobile-width){
