@@ -346,34 +346,58 @@ button:hover {
 }
 
 .forms {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: top;
   width: 100%;
   background-color: #6216c7;
 }
-.forms___text {
+.forms___container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 2rem;
+}
+.forms___container___text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 50%;
 }
-.forms___text___title {
+@media (max-width: 996px) {
+  .forms___container___text {
+    width: 100%;
+    height: 100%;
+    margin: 0.2rem;
+  }
+}
+.forms___container___text___title {
   color: #dbdad9;
   font-size: 1.875rem;
   line-height: 2.8125rem;
   font-weight: 900;
 }
-.forms___text___paragraph {
+.forms___container___text___paragraph {
   color: #dbdad9;
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 400;
 }
-.forms___form___input {
+.forms___container___form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.5rem;
+  width: 50%;
+}
+@media (max-width: 996px) {
+  .forms___container___form {
+    width: 100%;
+    height: 100%;
+    margin: 0.2rem;
+  }
+}
+.forms___container___form___input {
   width: 100%;
   padding: 1rem;
   margin-top: 0.25rem;
@@ -383,7 +407,7 @@ button:hover {
   color: #dbdad9;
   font-size: 0.8rem;
 }
-.forms___form button {
+.forms___container___form button {
   width: fit-content;
   padding: 1rem;
   margin-top: 0.25rem;
@@ -395,7 +419,7 @@ button:hover {
   font-weight: normal;
   transition: all 0.3s ease-in-out;
 }
-.forms___form button:hover {
+.forms___container___form button:hover {
   cursor: pointer;
   background: #8bf67e;
 }
