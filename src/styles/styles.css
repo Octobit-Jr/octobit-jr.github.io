@@ -442,7 +442,6 @@ button:hover {
   color: #dbdad9;
   width: 50%;
   text-align: center;
-  margin-bottom: 1rem;
 }
 @media (max-width: 996px) {
   .footer___paragraph {
