@@ -41,7 +41,8 @@ formsMessage.addEventListener("input", () => {
   formsPayload.message = formsMessage.value;
 });
 
-formsSubmit.addEventListener("click", () => {
+formsSubmit.addEventListener("click", (e) => {
+  e.preventDefault();
   fetch(forms_url, {
     method: "POST",
     headers: {
