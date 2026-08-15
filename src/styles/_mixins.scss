@@ -1,0 +1,11 @@
+@mixin min-width-to-display-content($size){
+    @media (min-width: $size){
+        @content;
+    }
+}
+
+@mixin max-width-to-display-content($size){
+    @media (max-width: $size){
+        @content;
+    }
+}
